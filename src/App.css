@@ -61,7 +61,6 @@ nav .menu span {
   nav .menu {
     display: flex;
     cursor: pointer;
-    margin-top: 1rem;
     margin-right: 1rem;
   }
   /* 

@@ -6,7 +6,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-black justify-between text-center items-center lg:p-2 p-12 sticky">
+    <nav className="w-full bg-black justify-between text-center items-center lg:p-2 p-8 sticky">
  
       <Link to="/"><h1 className="text-3xl  lg:text-5xl font-bold lg:px-4 brand">Maliki</h1></Link>
     
