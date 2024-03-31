@@ -39,7 +39,7 @@ const CreateBlog = () => {
           <label className="text-2xl lg:text-4xl">Create A Blog and Post For Free</label>
         </div>
 
-        <div className="p-4 w-full mb-8">
+        <div className="p-4 w-full mb-8 grid place-content-center">
           <label className="text-2xl lg:text-4xl mb-2 text-start">Upload a  picture:</label>
           <input
             type="file"
