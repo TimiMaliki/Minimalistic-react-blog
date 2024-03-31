@@ -33,27 +33,27 @@ const CreateBlog = () => {
           setFile(URL.createObjectURL( e.target.files[0]))
   }
   return (
-    <div className="w-full h-full p-20 text-center mt-2 grid">
+    <div className="w-full h-full p-0 text-center mt-2 grid">
       <form onSubmit={(e) => handleSubmit(e)}>
         <div className="p-10 w-full">
           <label className="text-2xl lg:text-4xl">Create A Blog and Post For Free</label>
         </div>
 
-        <div className="p-10 grid place-content-center w-full mb-8">
-          <label className="text-4xl mb-2 text-start">Upload a  picture:</label>
+        <div className="p-4 w-full mb-8">
+          <label className="text-2xl lg:text-4xl mb-2 text-start">Upload a  picture:</label>
           <input
             type="file"
             required
              onChange={getFile}
-             className="w-[300px] h-full lg:w-[500px] lg:h-[105px] border border-black text-black rounded-lg shadow-lg p-2"
+             className="w-[300px] h-full lg:w-[500px] lg:h-[105px]  text-black rounded-lg shadow-lg p-2"
           />
           <img src={blogImg} alt="" style={{width:"100%"}}   className="w-full h-full  rounded-lg mt-4"/>
         </div>
 
 
 
-        <div className="p-10 grid place-content-center w-full mb-8">
-          <label className="text-4xl mb-2 text-start">Title:</label>
+        <div className="p-4 grid place-content-center w-full mb-8 border">
+          <label className="text-2xl lg:text-4xl mb-2 text-start">Title:</label>
           <input
             type="text"
             placeholder=""
@@ -64,8 +64,8 @@ const CreateBlog = () => {
           />
         </div>
 
-        <div className="p-10 grid place-content-center w-full mb-8">
-          <label className="text-4xl mb-2 text-start">Date:</label>
+        <div className="p-4 grid place-content-center w-full mb-8">
+          <label className="text-2xl lg:text-4xl mb-2 text-start">Date:</label>
           <input
             type="text"
             placeholder=""
@@ -76,8 +76,8 @@ const CreateBlog = () => {
           />
         </div>
 
-        <div className="p-10  grid place-content-center w-full mb-8">
-          <label className="text-4xl mb-2 text-start">Body:</label>
+        <div className="p-4  grid place-content-center w-full mb-8">
+          <label className="text-2xl lg:text-4xl mb-2 text-start">Body:</label>
           <textarea
             className="w-[300px] h-full lg:w-[500px]  border border-black text-black rounded-lg shadow-lg p-10"
             required
@@ -86,8 +86,8 @@ const CreateBlog = () => {
           ></textarea>
         </div>
 
-        <div className="p-10  grid place-content-center w-full mb-8">
-          <label className="text-4xl mb-2 text-start">Number of Blog:</label>
+        <div className="p-4  grid place-content-center w-full mb-8">
+          <label className="text-2xl lg:text-4xl mb-2 text-start">Number of Blog:</label>
           <input
             className="w-full h-full lg:w-[500px] h-full border border-black text-black rounded-lg shadow-lg p-2"
             required
