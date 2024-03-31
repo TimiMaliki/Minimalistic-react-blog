@@ -62,13 +62,15 @@ nav .menu span {
     display: flex;
     cursor: pointer;
   }
-/* 
+  /* 
   nav {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
   } */
-
+  .brand {
+     margin-right:19rem;
+  }
   nav {
     flex-direction: column;
     align-items: flex-start;
@@ -81,7 +83,6 @@ nav .menu span {
     margin-top: 2rem;
     margin-bottom: 0.25rem;
   }
-
 
   nav ul.open {
     display: flex;

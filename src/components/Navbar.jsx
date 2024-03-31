@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-black justify-between text-center items-center lg:p-2 p-12 sticky">
  
-      <Link to="/"><h1 className="text-3xl  lg:text-5xl font-bold lg:px-4">Maliki</h1></Link>
+      <Link to="/"><h1 className="text-3xl  lg:text-5xl font-bold lg:px-4 brand">Maliki</h1></Link>
     
    
 

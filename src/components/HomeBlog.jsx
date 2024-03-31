@@ -40,7 +40,7 @@ const HomeBlog = () => {
 
   return (
     <div className="w-full h-full mt-12">
-      <div className="w-full h-full flex justify-between gap-3 p-14">
+      <div className="w-full h-full flex justify-between gap-8 p-14">
         <div className="our-services">
           <Link to="blog">
             <h1 className="text-5xl  lg:text-7xl font-extrabold">Blog</h1>
