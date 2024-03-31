@@ -69,7 +69,7 @@ nav .menu span {
     justify-content: space-between;
   } */
   .brand {
-     margin-right:12rem;
+     margin-right:9rem;
   }
   nav {
     flex-direction: column;
