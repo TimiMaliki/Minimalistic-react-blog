@@ -1,35 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+// import React, { useEffect, useState } from "react";
+
 
 const Index = () => {
-  const routeParams = useParams();
 
-  const [currentBlog, setCurrentBlog] = useState({});
 
-  const retrievedData = (id) => {
-    const data = localStorage.getItem("dataStord");
-    const parse = JSON.parse(data);
-    return parse.id === id;
-  };
-
-  useEffect(() => {
-    const data = routeParams.id;
-    setCurrentBlog(data);
-  }, []);
-
-  // const getBlog=(id)=>{
-  //  const currentBlog= retrievedData.find((read)=>{
-  //   // console.log({read,id})
-  //   return read.id === Number(id)
-  //  })
-  // //  console.log({currentBlog})
-  //  setCurrentBlog(currentBlog)
-  // }
-
-  // React.useEffect(()=>{
-  //  retrievedData(routeParams.id)
-  //   setCurrentBlog(data)
-  // },[])
 
   return (
     <div className="w-full h-full mt-8 ">

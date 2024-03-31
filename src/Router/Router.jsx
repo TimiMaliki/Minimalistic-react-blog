@@ -11,8 +11,9 @@ const Router = () => {
     <Routes>
       <Route path="" element={<MainLayout />}>
         <Route index element={<App />} />
-        <Route path="/blog" element={<BlogArticle />} />
+        <Route path="/blog" element={<BlogArticle />}>
         <Route path="/blog/:id" element={<Index/>} />
+        </Route>
         <Route path="/create" element={<CreateBlog/>} />
       </Route>
     </Routes>
