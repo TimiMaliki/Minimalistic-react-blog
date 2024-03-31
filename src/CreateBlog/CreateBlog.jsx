@@ -33,63 +33,63 @@ const CreateBlog = () => {
           setFile(URL.createObjectURL( e.target.files[0]))
   }
   return (
-    <div className="w-full h-full p-20 text-center mt-2 ">
+    <div className="w-full h-full p-20 text-center mt-2 grid">
       <form onSubmit={(e) => handleSubmit(e)}>
         <div className="p-10 w-full">
           <label className="text-2xl lg:text-4xl">Create A Blog and Post For Free</label>
         </div>
 
-        <div className="p-0 lg:p-10   text-start w-full">
-          <label className="text-xl  text-4xl mb-2 text-start">Upload a  picture:</label>
+        <div className="p-10 grid place-content-center w-full">
+          <label className="text-4xl mb-2 text-start">Upload a  picture:</label>
           <input
             type="file"
             required
              onChange={getFile}
-             className="w-full h-full h-[105px] border border-black text-black rounded-lg shadow-lg p-2"
+             className="w-[300px] h-full lg:w-[500px] lg:h-[105px] border border-black text-black rounded-lg shadow-lg p-2"
           />
-          <img src={blogImg} alt=""  style={{width:'100%'}}   className="w-full h-full  rounded-lg mt-4"/>
+          <img src={blogImg} alt="" style={{width:"100%"}}   className="w-full h-full  rounded-lg mt-4"/>
         </div>
 
 
 
-        <div className="p-0 md:p-10  w-full">
-          <label className="text-xl lg:text-4xl mb-2 text-start p-4">Title:</label>
+        <div className="p-10 grid place-content-center w-full">
+          <label className="text-4xl mb-2 text-start">Title:</label>
           <input
             type="text"
             placeholder=""
             required
             value={title}
             onChange={(e) => setTitleBlog(e.target.value)}
-            className="w-full h-full h-[35px] border border-black text-black rounded-lg shadow-lg p-2"
+            className=" w-[300px] h-full lg:w-[500px] lg:h-[35px] border border-black text-black rounded-lg shadow-lg p-2"
           />
         </div>
 
-        <div className="p-0 md:p-10   w-full">
-          <label className="text-xl  lg:text-4xl mb-2 text-start p-4">Date:</label>
+        <div className="p-10 grid place-content-center w-full">
+          <label className="text-4xl mb-2 text-start">Date:</label>
           <input
             type="text"
             placeholder=""
             required
             value={date}
             onChange={(e) => setDateBlog(e.target.value)}
-            className="w-full h-full h-[35px] border  text-black border-black rounded-lg shadow-lg p-2"
+            className="w-[300px] h-full lg:w-[500px] lg:h-[35px] border  text-black border-black rounded-lg shadow-lg p-2"
           />
         </div>
 
-        <div className="p-0 lg:p-10    w-full">
-          <label className="text-xl text-4xl mb-2 text-start p-4">Body:</label>
+        <div className="p-10  grid place-content-center w-full">
+          <label className="text-4xl mb-2 text-start">Body:</label>
           <textarea
-            className="w-full h-[300px] h-[400px] border border-black text-black rounded-lg shadow-lg lg:p-0 lg:p-10 "
+            className="w-[300px] h-[300px] lg:w-[500px] lg:h-[400px] border border-black text-black rounded-lg shadow-lg p-10"
             required
             value={body}
             onChange={(e) => setBodyBlog(e.target.value)}
           ></textarea>
         </div>
 
-        <div className="p-0 lg:p-10    w-full">
-          <label className="text-xl  text-4xl mb-2 text-start p-4">Number of Blog:</label>
+        <div className="p-10  grid place-content-center w-full">
+          <label className="text-4xl mb-2 text-start">Number of Blog:</label>
           <input
-            className="w-full h-full h-[35px] border border-black text-black rounded-lg shadow-lg p-2"
+            className="w-full h-full lg:w-[500px] lg:h-[35px] border border-black text-black rounded-lg shadow-lg p-2"
             required
             type="number"
             value={id}
