@@ -52,7 +52,7 @@ const CreateBlog = () => {
 
 
 
-        <div className="p-4 grid place-content-center w-full mb-8 border">
+        <div className="p-4 grid place-content-center w-full mb-8 ">
           <label className="text-2xl lg:text-4xl mb-2 text-start">Title:</label>
           <input
             type="text"
