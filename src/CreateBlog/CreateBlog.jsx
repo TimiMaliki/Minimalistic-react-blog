@@ -40,7 +40,7 @@ const CreateBlog = () => {
         </div>
 
         <div className="p-10 grid place-content-center  text-end w-full">
-          <label className="text-4xl mb-2 text-start">Upload a  picture:</label>
+          <label className="text-xl  text-4xl mb-2 text-start">Upload a  picture:</label>
           <input
             type="file"
             required
@@ -53,19 +53,19 @@ const CreateBlog = () => {
 
 
         <div className="p-10 grid place-content-center w-full">
-          <label className="text-4xl mb-2 text-start">Title:</label>
+          <label className="text-xl lg:text-4xl mb-2 text-start">Title:</label>
           <input
             type="text"
             placeholder=""
             required
             value={title}
             onChange={(e) => setTitleBlog(e.target.value)}
-            className=" w-[300px] h-full lg:w-[500px] lg:h-[35px] border border-black text-black rounded-lg shadow-lg p-2"
+            className="w-[300px] h-full lg:w-[500px] lg:h-[35px] border border-black text-black rounded-lg shadow-lg p-2"
           />
         </div>
 
         <div className="p-10 grid place-content-center w-full">
-          <label className="text-4xl mb-2 text-start">Date:</label>
+          <label className="text-xl  text-4xl mb-2 text-start">Date:</label>
           <input
             type="text"
             placeholder=""
@@ -77,9 +77,9 @@ const CreateBlog = () => {
         </div>
 
         <div className="p-10  grid place-content-center w-full">
-          <label className="text-4xl mb-2 text-start">Body:</label>
+          <label className="text-xl text-4xl mb-2 text-start">Body:</label>
           <textarea
-            className="w-[300px] h-[300px] lg:w-[500px] lg:h-[400px] border border-black text-black rounded-lg shadow-lg p-10"
+            className="w-[300px] h-[300px] lg:w-[500px] lg:h-[400px] border border-black text-black rounded-lg shadow-lg lg:p-10"
             required
             value={body}
             onChange={(e) => setBodyBlog(e.target.value)}
@@ -87,7 +87,7 @@ const CreateBlog = () => {
         </div>
 
         <div className="p-10  grid place-content-center w-full">
-          <label className="text-4xl mb-2 text-start">Number of Blog:</label>
+          <label className="text-xl  text-4xl mb-2 text-start">Number of Blog:</label>
           <input
             className="w-full h-full lg:w-[500px] lg:h-[35px] border border-black text-black rounded-lg shadow-lg p-2"
             required
