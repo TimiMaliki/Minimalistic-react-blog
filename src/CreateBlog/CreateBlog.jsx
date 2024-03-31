@@ -35,7 +35,7 @@ const CreateBlog = () => {
   return (
     <div className="w-full h-full p-20 text-center mt-2 grid">
       <form onSubmit={(e) => handleSubmit(e)}>
-        <div className="lg:p-10 w-full">
+        <div className="p-10 w-full">
           <label className="text-2xl lg:text-4xl">Create A Blog and Post For Free</label>
         </div>
 
@@ -79,7 +79,7 @@ const CreateBlog = () => {
         <div className="p-10  grid place-content-center w-full mb-8">
           <label className="text-4xl mb-2 text-start">Body:</label>
           <textarea
-            className="w-[300px] h-[300px] lg:w-[500px] lg:h-[400px] border border-black text-black rounded-lg shadow-lg p-10"
+            className="w-[300px] h-full lg:w-[500px]  border border-black text-black rounded-lg shadow-lg p-10"
             required
             value={body}
             onChange={(e) => setBodyBlog(e.target.value)}
@@ -89,7 +89,7 @@ const CreateBlog = () => {
         <div className="p-10  grid place-content-center w-full mb-8">
           <label className="text-4xl mb-2 text-start">Number of Blog:</label>
           <input
-            className="w-full lg:w-[500px] h-full border border-black text-black rounded-lg shadow-lg p-2"
+            className="w-full h-full lg:w-[500px] h-full border border-black text-black rounded-lg shadow-lg p-2"
             required
             type="number"
             value={id}
