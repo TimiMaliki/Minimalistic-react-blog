@@ -39,15 +39,15 @@ const CreateBlog = () => {
           <label className="text-2xl lg:text-4xl">Create A Blog and Post For Free</label>
         </div>
 
-        <div className="p-10 grid place-content-center w-full">
+        <div className="p-10 grid place-content-center  text-end w-full">
           <label className="text-4xl mb-2 text-start">Upload a  picture:</label>
           <input
             type="file"
             required
              onChange={getFile}
-             className="w-full h-full lg:w-[500px] lg:h-[105px] border border-black text-black rounded-lg shadow-lg p-2"
+             className="w-[300px] h-full lg:w-[500px] lg:h-[105px] border border-black text-black rounded-lg shadow-lg p-2"
           />
-          <img src={blogImg} alt=""    className="w-full h-full  rounded-lg mt-4"/>
+          <img src={blogImg} alt=""  style={{width:'100%'}}   className="w-full h-full  rounded-lg mt-4"/>
         </div>
 
 
@@ -60,7 +60,7 @@ const CreateBlog = () => {
             required
             value={title}
             onChange={(e) => setTitleBlog(e.target.value)}
-            className=" w-full h-full lg:w-[500px] lg:h-[35px] border border-black text-black rounded-lg shadow-lg p-2"
+            className=" w-[300px] h-full lg:w-[500px] lg:h-[35px] border border-black text-black rounded-lg shadow-lg p-2"
           />
         </div>
 
@@ -72,14 +72,14 @@ const CreateBlog = () => {
             required
             value={date}
             onChange={(e) => setDateBlog(e.target.value)}
-            className="w-full h-full lg:w-[500px] lg:h-[35px] border  text-black border-black rounded-lg shadow-lg p-2"
+            className="w-[300px] h-full lg:w-[500px] lg:h-[35px] border  text-black border-black rounded-lg shadow-lg p-2"
           />
         </div>
 
         <div className="p-10  grid place-content-center w-full">
           <label className="text-4xl mb-2 text-start">Body:</label>
           <textarea
-            className="w-full h-full lg:w-[500px] lg:h-[400px] border border-black text-black rounded-lg shadow-lg p-10"
+            className="w-[300px] h-[300px] lg:w-[500px] lg:h-[400px] border border-black text-black rounded-lg shadow-lg p-10"
             required
             value={body}
             onChange={(e) => setBodyBlog(e.target.value)}

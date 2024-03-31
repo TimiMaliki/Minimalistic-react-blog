@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import DeleteItem from "../components/DeleteItem";
 import { Link } from "react-router-dom";
 
 const BlogArticle = () => {
@@ -16,32 +17,15 @@ const BlogArticle = () => {
     setArticles(data)
  }, []);
 
+ const handleDelete = (id) => {
+  const del = homeBlog.filter((item) => {
+   return item.id !== id;
+  });
+  setHomeBlog(del);
+};
 
-  // const [isLoading, setIsLoading] = useState(true);
-  // const [error , setError] = useState(null)
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     fetch("http://localhost:8000/db")
-  //     .then((res) => {
-  //       if(!res.ok){
-  //         throw Error('could not fetch data')
-  //       }
-  //       return res.json();
-  //     })
-  //     .then(data => {
-  //       console.log(data);
-  //       setArticles(data);
-  //       setIsLoading(false);
-  //       setError(null)
-  //     })
-  //     .catch((error) => {
-  //       setIsLoading(false);
-  //        setError(error.message)
-  //     })
-  //   }, 1000);
-  // }, []);
-
+ 
   return (
     <div className="w-full h-full mt-2">
       <div className="article-component w-full h-full  p-12 lg:p-20">
@@ -52,8 +36,7 @@ const BlogArticle = () => {
         </div>
         <div></div>
       </div>
-           {/* { error && <div className="text-center text-3xl">{error}</div>}
-           {isLoading && <div className="text-center text-3xl">Loading...</div>} */}
+  
       {articles && (
         <div className="blogArticles w-full h-full grid grid-cols-1 lg:grid-cols-2 p-20 mb-2 ">
           {articles.map((article) => (
@@ -79,6 +62,7 @@ const BlogArticle = () => {
                   {article.title}
                 </p>
               </Link>
+              <DeleteItem handleDelete={() => handleDelete(homeBlog.id)} />
             </div>
           ))}
         </div>

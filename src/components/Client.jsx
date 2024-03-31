@@ -32,7 +32,7 @@ const Client = () => {
       <div className="grid lg:grid-cols-6 grid-cols-2 gap-3 p-14 lg:p-12">
           {imagiesFirstBatch.map((batch) => (
             <div className="flex justify-center">
-                 <img src={batch} alt="" key={batch}/>
+                 <img src={batch} alt="" key={batch.id}/>
             </div>
           ))}
       </div>
