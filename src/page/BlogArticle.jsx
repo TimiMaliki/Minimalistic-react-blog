@@ -58,7 +58,7 @@ const BlogArticle = () => {
               className="blogGrid grid place-content-center "
               key={article.id}
             >
-              <div className="blogCard w-96 bg-white border border-gray-200 rounded-lg shadow bg-gray-100 dark:border-gray-700">
+              <div className="blogCard w-full  bg-white border border-gray-200 rounded-lg shadow bg-gray-100 dark:border-gray-700">
                 <img
                   className="w-full h-full  rounded-lg"
                   src={article.blogImg}
@@ -68,15 +68,16 @@ const BlogArticle = () => {
               </div>
 
               <Link to={`/blog/${article.id}`}>
-                <p className="p-4 hover:text-yellow-700">{article.date}</p>
+                <p className="p-4 hover:text-yellow-700 ">{article.date}</p>
               </Link>
 
               <Link to={`/blog/${article.id}`}>
-                <p className=" text-xl mb-8 text-black hover:text-yellow-700">
+                <p className=" text-xl mb-8 text-black hover:text-yellow-700 ">
                   {article.title}
                 </p>
               </Link>
-              <DeleteItem handleDelete={() => handleDelete(homeBlog.id)} />
+              <div className="mb-4"><DeleteItem handleDelete={() => handleDelete(homeBlog.id)} /></div>
+           
             </div>
           ))}
         </div>
