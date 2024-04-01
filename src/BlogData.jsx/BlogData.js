@@ -17,7 +17,7 @@ export const BlogData = [
     Identifying Brand Gaps: A brand audit reveals any inconsistencies or gaps in your brand messaging, visual identity, and customer experience. Addressing these gaps ensures a cohesive and unified brand image.
     
     Strategic Planning: Armed with insights from the audit, you can develop a more informed and targeted branding strategy. This includes refining brand messaging, adjusting visual elements, and optimizing customer touchpoints.
-    
+  
     How to Conduct a Brand Audit:
     Define Audit Objectives: Determine the specific goals of the audit. Are you focusing on brand perception, visual identity, messaging, or all of the above? Clearly define what you want to achieve.
     
