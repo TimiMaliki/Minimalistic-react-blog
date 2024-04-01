@@ -34,14 +34,6 @@ const Navbar = () => {
             </a>
           </Link>
         </li>
-
-        <li className="font-sans text-base">
-        <Link to="create">
-            <a href="" className="text-white hover:text-yellow-700">
-             Create Blog
-            </a>
-          </Link>
-        </li>
       </ul>
     </nav>
   );
